@@ -80,7 +80,7 @@ imshow(yeast,[]);
 yeast = imdilate(yeast,strel('disk',5));
 yeast2 = imfill(yeast,'holes');
 imshow(yeast2,[]);
-yeast = imsubtract(yeast2,yeast1);
+yeast = imsubtract(yeast2,yeast);
 imshow(yeast,[]);
 
 figure;
