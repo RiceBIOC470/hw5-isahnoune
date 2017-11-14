@@ -1,4 +1,14 @@
 %HW5
+%GB comments:
+1a 70 question asks to output a file in the repository of the mask image. No image provided
+1b 100 need to invert the image. Could have benefited from cleaning up the image some more by removing the spectled areas using bwareaopen. 
+1c 70 same issue has 1a. 
+1d 100
+2yeast: 100
+2worm: 90 Mask here is pretty messy. The edge space of the image are not properly removed and there is a lot of speckled small masks that litter the image. This should be removed from the image.  
+2bacteria: 90 bacteria could use significant improvement in the segmentation. Currently most mask objects are connected. This could be reduced with a simple line of code using imerode. Alternatively, you could use some more complex like watershed. 
+2phase: 100 
+Overall: 90
 
 % Note. You can use the code readIlastikFile.m provided in the repository to read the output from
 % ilastik into MATLAB.
